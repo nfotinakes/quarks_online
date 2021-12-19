@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/modifyItem_itemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="@string/modifyItem_itemName" />
+
+    <EditText
+        android:id="@+id/modifyItem_itemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modifyItem_itemName"
+        android:hint="@string/modifyItem_itemDescription" />
+
+    <NumberPicker
+        android:id="@+id/modifyItem_QuantityPicker"
+        android:layout_width="91dp"
+        android:layout_height="101dp"
+        android:layout_below="@+id/modifyItem_itemPrice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp" />
+
+    <TextView
+        android:id="@+id/modifyItem_QuantityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modifyItem_itemPrice"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="44dp"
+        android:layout_toStartOf="@id/modifyItem_QuantityPicker"
+        android:text="@string/modifyItem_inventory" />
+
+    <EditText
+        android:id="@+id/modifyItem_itemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/modifyItem_price"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/modifyItem_itemDescription"/>
+
+
+</RelativeLayout>
